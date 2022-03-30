@@ -1,0 +1,99 @@
+<!doctyle html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8">
+	<meta name='viewport' >
+	<title>Class || Eight</title>
+</head>
+	<body>
+		<h2>HTML Form</h2>
+		<hr>
+		<form action="test.html" target="_blank" enctype=""multipart/form-data>
+			<fieldset>
+				<legend>Contact Us</legend>
+				<label for="name">Your Name</label> <br>
+				<input type="text" id="name" placeholder="Please enter your name" minlength="5" maxlength= "10" required/>
+				<br><br>
+			
+				<label for="age">Your Age</label> <br>
+				<input type="number" id="age" placeholder="Please enter your age" min= "0" max= "150" required />
+				<br><br>
+			
+			<label for="description">Your Messages</label> <br>
+			<textarea id="description" rows="5" cols="20" placeholder="please enter your message" required></textarea>
+			<br><br>
+			
+			<label for="img">Your Image</label> <br>
+			<input id="img" type="file" placeholder="Please enter your name"  />
+			<br> <br>
+			
+			<label for="">Your Gender</label> <br>
+			<input type="radio" name="gender" id="male" />
+			<label for="male">Male</>
+			<br> 
+			<input type="radio" name="gender" id="female" />
+			<label for="female">Female</>
+			<br> 
+			<input type="radio" name="gender" id="others" />
+			<label for="others">Others</>
+			<br> 
+			</fieldset>
+			
+			<label for="">Your Division</label> <br>
+				<select name="city">
+					<option value="dhaka">Dhaka</option>
+					<option value="rangpur">Rangpur</option>
+					<option value="barisal">Barisal</option>
+					<option value="mymensingh">Mymensingh</option>
+					<option value="chattogram">Chattogram</option>
+					<option value="khulna">Khulna</option>
+					<option value="sylhet">Sylhet</option>
+					<option value="rajshahi">Rajshahi</option>
+				</select>
+			<br><br>
+			
+			<label for="">Your Favorites Foods</label> <br>
+				<select name="foods" multiple>
+					<option value="rice">Rice</option>
+					<option value="vegetables">Vegetables</option>
+					<option value="meats">Meats</option>
+					
+				</select>
+			<br><br>
+			
+			<input id="acept_tarms" type="checkbox" />
+			<label for="acept_tarms">Are you accept this rule?</label>
+			<br><br>
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+		
+		<!--
+		
+		<hr>
+		<p> For using form tag firstly use:- label, input[ type, placeholder,]
+			<pre>
+				Form:
+				Form, Action, input-text,input-file,input-textarea, 
+				input-checkbox, input-radio,input-select, input-multiselect
+				label, button, submit, reset, legend, fieldset, action
+				script tag:
+				script,src, type, make a calculation and print in a div
+			
+			</pre>
+		</p> -->
+		<hr>
+		<h3> Claculator </h3>
+		<input type="number" id="number1" /> +
+		<input type="number" id="number2" />
+		<span> = </span>
+		<script>
+			//alert("welcome to java");
+			var number1	= document.getElementById('number1').value;
+			var number2	= document.getElementById('number2').value;
+			alert(number1+number2);
+			//alert("document.getElementById('name').value;");
+		</script>
+	</body>
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+</html>
